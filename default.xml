@@ -364,7 +364,7 @@
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" />
 
-  <project path="android" name="android" remote="Th3Bill" revision="cm10.1" />
+  <project path="android" name="Th3Bill/android" revision="cm10.1" />
   <project path="device/moto/sunfire" name="Th3Bill/sunfire" revision="cm10.1"/>
   <project path="device/moto/olympus" name="Th3Bill/android_device_motorola_olympus" revision="cm10.1" />
   <project path="external/webkit" name="Th3Bill/android_external_webkit" revision="cm10.1" />
