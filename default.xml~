@@ -4,6 +4,9 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
 
+  <remote  name="Th3Bill"
+	   fetch="git://github.com/Th3Bill/" />
+
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
@@ -19,6 +22,8 @@
   <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+
+  <project path="android" name="android" remote="Th3Bill" revision="cm10.1" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" />
   <project path="bionic" name="CyanogenMod/android_bionic" />
@@ -37,6 +42,8 @@
   <project path="device/generic/x86" name="CyanogenMod/android_device_generic_x86" />
   <project path="device/google/accessory/arduino" name="CyanogenMod/android_device_google_accessory_arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="CyanogenMod/android_device_google_accessory_demokit" groups="device" />
+  <project path="device/moto/sunfire" name="Th3Bill/sunfire" />
+  <project path="device/moto/olympus" name="Th3Bill/android_device_motorola_olympus" />
   <project path="device/sample" name="CyanogenMod/android_device_sample" groups="device" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" remote="aosp" revision="jb-mr1-release" />
   <project path="external/aac" name="CyanogenMod/android_external_aac" />
@@ -198,6 +205,7 @@
   <project path="external/v8" name="CyanogenMod/android_external_v8" />
   <project path="external/valgrind" name="CyanogenMod/android_external_valgrind" />
   <project path="external/vim" name="CyanogenMod/android_external_vim" />
+  <project path="external/webkit" name="android_external_webkit" remote="Th3Bill" revision="cm10.1" />
   <project path="external/webp" name="CyanogenMod/android_external_webp" />
   <project path="external/webrtc" name="CyanogenMod/android_external_webrtc" />
   <project path="external/wpa_supplicant_6" name="CyanogenMod/android_external_wpa_supplicant_6" />
@@ -207,6 +215,8 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="Th3Bill" revision="cm10.1" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="Th3Bill" revision="cm10.1" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" />
   <project path="frameworks/compile/linkloader" name="CyanogenMod/android_frameworks_compile_linkloader" />
   <project path="frameworks/compile/llvm-ndk-cc" name="CyanogenMod/android_frameworks_compile_llvm-ndk-cc" />
@@ -253,6 +263,8 @@
   <project path="hardware/ti/omap4xxx" name="CyanogenMod/android_hardware_ti_omap4xxx" />
   <project path="hardware/ti/wlan" name="CyanogenMod/android_hardware_ti_wlan" />
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" />
+  <project path="kernel/moto/sunfire" name="photon_kernel" remote="Th3Bill" revision="master"/>
+  <project path="kernel/moto/olympus" name="atrix_kernel" remote="Th3Bill" revision="master"/>
   <project path="libcore" name="CyanogenMod/android_libcore" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" />
   <project path="ndk" name="platform/ndk" remote="aosp" revision="jb-mr1-release" />
@@ -262,6 +274,7 @@
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" />
   <project path="packages/apps/Calculator" name="CyanogenMod/android_packages_apps_Calculator" />
   <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" />
+  <project path="packages/apps/Camera" name="Camera" remote="Th3Bill" revision="cm10.1" />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" />
@@ -269,12 +282,14 @@
   <project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" />
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
+  <project path="packages/apps/DockAudio" name="CyanogenMod/android_packages_apps_DockAudio" revision="gingerbread"/>
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
   <project path="packages/apps/Gallery" name="CyanogenMod/android_packages_apps_Gallery" />
   <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" />
   <project path="packages/apps/HTMLViewer" name="CyanogenMod/android_packages_apps_HTMLViewer" />
+  <project path="packages/apps/HwaSettings" name="Th3Bill/HwaSettings" />
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" />
   <project path="packages/apps/Launcher2" name="CyanogenMod/android_packages_apps_Launcher2" />
   <project path="packages/apps/LegacyCamera" name="CyanogenMod/android_packages_apps_LegacyCamera" />
@@ -299,6 +314,7 @@
   <project path="packages/apps/Trebuchet" name="CyanogenMod/android_packages_apps_Trebuchet" />
   <project path="packages/apps/VideoEditor" name="CyanogenMod/android_packages_apps_VideoEditor" />
   <project path="packages/apps/VoiceDialer" name="CyanogenMod/android_packages_apps_VoiceDialer" />
+  <project path="packages/apps/Usb" name="CyanogenMod/android_packages_apps_Usb" revision="ics"/>
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
   <project path="packages/inputmethods/LatinIME" name="CyanogenMod/android_packages_inputmethods_LatinIME" />
   <project path="packages/inputmethods/OpenWnn" name="CyanogenMod/android_packages_inputmethods_OpenWnn" />
@@ -346,7 +362,9 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" remote="aosp" revision="jb-mr1-release" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" remote="aosp" revision="jb-mr1-release" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" remote="aosp" revision="jb-mr1-release" />
+  <project path="vendor/moto" name="moto_vend" remote="Th3Bill" revision="cm10.1" />
   <project path="sdk" name="platform/sdk" remote="aosp" revision="jb-mr1-release" />
+  <project path="kernel/moto/olympus/wifi-module" name="wifi_module" remote="Th3Bill" revision="master"/>  
   <project path="system/bluetooth" name="CyanogenMod/android_system_bluetooth" />
   <project path="system/core" name="CyanogenMod/android_system_core" />
   <project path="system/extras" name="CyanogenMod/android_system_extras" />
@@ -363,21 +381,4 @@
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" />
-
-  <project path="android" name="android" remote="Th3Bill" revision="cm10.1" />
-  <project path="device/moto/sunfire" name="Th3Bill/sunfire" revision="cm10.1"/>
-  <project path="device/moto/olympus" name="Th3Bill/android_device_motorola_olympus" revision="cm10.1" />
-  <project path="external/webkit" name="Th3Bill/android_external_webkit" revision="cm10.1" />
-  <project path="frameworks/av" name="Th3Bill/android_frameworks_av" revision="cm10.1" />
-  <project path="frameworks/base" name="Th3Bill/android_frameworks_base" revision="cm10.1" />
-  <project path="frameworks/native" name="Th3Bill/android_frameworks_native" revision="cm10.1" />
-  <project path="hardware/libhardware_legacy" name="Th3Bill/android_hardware_libhardware_legacy" revision="cm10.1" />
-  <project path="kernel/moto/sunfire" name="Th3Bill/photon_kernel" revision="master"/>
-  <project path="kernel/moto/olympus" name="Th3Bill/atrix_kernel" revision="master"/>
-  <project path="packages/apps/Camera" name="Th3Bill/Camera" revision="cm10.1" />
-  <project path="packages/apps/DockAudio" name="CyanogenMod/android_packages_apps_DockAudio" revision="gingerbread"/>
-  <project path="packages/apps/HwaSettings" name="Th3Bill/HwaSettings" revision="jellybean"/>
-  <project path="packages/apps/Usb" name="CyanogenMod/android_packages_apps_Usb" revision="ics"/>
-  <project path="vendor/moto" name="Th3Billmoto_vend" revision="cm10.1" />
-  <project path="kernel/moto/olympus/wifi-module" name="Th3Bill/wifi_module" revision="master"/>  
 </manifest>
