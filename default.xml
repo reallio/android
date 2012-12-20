@@ -376,6 +376,6 @@
   <project path="packages/apps/DockAudio" name="CyanogenMod/android_packages_apps_DockAudio" revision="gingerbread"/>
   <project path="packages/apps/HwaSettings" name="Th3Bill/HwaSettings" revision="jellybean"/>
   <project path="packages/apps/Usb" name="CyanogenMod/android_packages_apps_Usb" revision="ics"/>
-  <project path="vendor/moto" name="Th3Billmoto_vend" revision="cm10.1" />
+  <project path="vendor/moto" name="Th3Bill/moto_vend" revision="cm10.1" />
   <project path="kernel/moto/olympus/wifi-module" name="Th3Bill/wifi_module" revision="master"/>  
 </manifest>
