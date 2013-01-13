@@ -377,8 +377,7 @@
   <project path="packages/apps/HwaSettings" name="Th3Bill/HwaSettings" revision="jellybean"/>
   <project path="packages/apps/Usb" name="CyanogenMod/android_packages_apps_Usb" revision="ics"/>
   <project path="vendor/moto" name="Th3Bill/moto_vend" revision="cm10.1" />
-  <project path="kernel/moto/olympus/wifi-module" name="Th3Bill/wifi_module" revision="master"/>  
+  <project path="kernel/moto/olympus/wifi-module" name="Th3Bill/wifi_module" revision="cm10.1"/>  
   <project path="vendor/authentec" name="Th3Bill/authentec" revision="master"/>
-  <project path="vendor/cm/proprietary" name="Th3Bill/term" revision="master"/>
   <project path="packages/apps/Gallery2" name="Th3Bill/Gallery2" revision="epinter-olympus-mr1"/>
 </manifest>
